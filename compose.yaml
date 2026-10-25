@@ -1,0 +1,12 @@
+# gobeyondcreativity.com (Next 14, no database), as it ran on kimsufi. Deployed by Dokploy as a
+# compose service; the domains are set in Dokploy and point at gbc-web, port 3010.
+# The service name is prefixed so it can't clash with another compose on dokploy-network.
+
+services:
+  gbc-web:
+    build: .
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 256M

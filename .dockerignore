@@ -1,0 +1,7 @@
+.git
+.next
+.DS_Store
+.vscode
+.husky
+node_modules
+private
